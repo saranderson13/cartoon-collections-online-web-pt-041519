@@ -17,7 +17,11 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any? { |call| call.length > 4 }
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(foods)
+  # Return the first food to match any of the cheeses.
   cheese_types = ["cheddar", "gouda", "camembert"]
+  
+  foods.detect do |food_item|
+    cheese_types.each { |cheese| food_item == cheese }
+  end
 end
