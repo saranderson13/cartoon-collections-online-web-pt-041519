@@ -8,7 +8,7 @@ def summon_captain_planet(planeteer_calls)
   # Capitalizes each element and adds an "!"
   # Returns a changed array
   
-  planeteer_calls.collect { |call| call.capitalize << "!" }
+  planeteer_calls.collect { |call| "#{call.capitalize}!" }
 end
 
 def long_planeteer_calls# code an argument here
