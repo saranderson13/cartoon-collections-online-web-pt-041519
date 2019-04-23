@@ -22,6 +22,6 @@ def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   foods.detect do |food_item|
-    cheese_types.each { |cheese| food_item == cheese }
+    
   end
 end
