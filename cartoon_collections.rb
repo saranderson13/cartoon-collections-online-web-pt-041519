@@ -1,5 +1,7 @@
 def roll_call_dwarves(dwarves)
-  # Accepts an array of dwarves, then "puts" them out in order.
+  # Accepts an array of dwarves, then "puts" them out in a numbered list.
+  
+  dwarves.each_with_index { |dwarf, index| puts "#{index + 1}. #{dwarf}" }
 end
 
 def summon_captain_planet# code an argument here
